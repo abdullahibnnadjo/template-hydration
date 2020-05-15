@@ -2,9 +2,11 @@
 
 ---
 
-# svelte app
+# svelte app - hydration example !
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+Just to show how to make server side rendering with hydration
+Simply look the `generate-hydration.sh` file to understand the build
+Then, `npm i && ./generate-hydration.sh && firefox public/index.html` !
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
