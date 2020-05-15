@@ -7,18 +7,18 @@ import { terser } from 'rollup-plugin-terser';
 const production = !process.env.ROLLUP_WATCH;
 
 export default {
-	input: '.hydration/client.js',
+	input: '.hydration/server.js',
 	output: {
 		sourcemap: false,
 		format: 'iife',
 		name: 'app',
-		file: 'public/build/bundle.js'
+		file: '.hydration/server-side-build.js'
 	},
 	plugins: [
 		svelte({
 		      // By default, the client-side compiler is used. You
 		      // can also use the server-side rendering compiler
-		      generate: 'dom',
+		      generate: 'ssr',
 		      
 		      // ensure that extra attributes are added to head
 		      // elements for hydration (used with ssr: true)
